@@ -1,0 +1,168 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    text-transform: capitalize;
+}
+/* ------Navbar styling------- */
+
+header{
+  width: 100vw; 
+  height: 88px;
+  background-color:white;
+  padding: 0 60px;
+  position: fixed ;
+  z-index: 1;
+    }
+
+
+nav{
+ /* position: sticky; */
+  background-color:transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  height: 88px;
+   }
+
+nav ul{
+list-style-type: none;
+      }
+nav ul li {
+    display: inline;
+    margin: 0 10px; /* Adds space on both sides of each item */
+    font-family: poppins ,sans-serif;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover {
+    color: #5236ff; /* Changes text color to #5236ff on hover */
+}
+
+/* Add shadow effect for the last two links */
+nav ul li:nth-last-child(2) a:hover,
+nav ul li:nth-last-child(1) a:hover {
+    /* color:white;  */
+    box-shadow: 0px 4px 8px  rgba(82, 54, 255, 0.5)  ; 
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+nav img{     
+    width: 200px;
+    height: 38px;
+}
+li .btn1{
+    border: 2px solid #5236ff;
+    border-radius: 5px;
+    color:  #5236ff;
+    font-weight: bold;
+    padding: 14px 18px;
+    font-size: 12px ;
+    cursor: pointer;
+    }
+li .btn2
+{
+    background-color: #5236ff;
+    color: white; 
+    font-weight: bold;
+    /* border: 3px solid #5236ff;  */
+    border-radius: 5px;
+    padding: 14px 18px;
+   }
+
+  /* -------Hero section styling ---------*/
+.hero{
+    position: relative;
+    top: 88px;
+    
+  }
+  .hero-content{
+    height: 540px;
+    width: 1240px;
+    padding: 0 24px;
+    margin: 0 139.6px;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .hero-title{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: left;
+    width: 483px;
+    height: 216px;
+  }
+   .purpul-hero-title{
+   color: #5236ff;
+   }
+   .hero-sutitle{
+    margin: 10px 0 24px 0;
+    width: 483px;
+    height: 84px;
+    font-weight: 400;
+    line-height: 1.75rem;
+    
+
+   }
+   @keyframes HeroBanner_upAndDown__roru6 {
+    0%, 100% {
+        transform: translateY(0); /* Starting and ending position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up slightly at the midpoint */
+    }
+}
+
+   .hero-baner{
+    position: absolute;
+    right: 0;     
+    width: 70%;
+    height: 541px;
+    background-image: url(https://codeupscale.com/_next/static/media/homeBanner1.89ce67f3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Animation Properties */
+    animation: HeroBanner_upAndDown__roru6 3s ease-in-out infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+   
+   }
+
+   /* service section  */
+   .ser-div{
+    margin-top: 100px;
+   /* background-color: #5236ff; */
+    background-image: url(service-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:  967px;
+}
+.ser-container{
+height: 723px;
+width: 1240px;
+display: flex;
+justify-content: flex-start;
+/* align-items: flex-start; */
+
+}
+  
